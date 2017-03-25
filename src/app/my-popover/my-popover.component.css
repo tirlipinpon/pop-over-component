@@ -1,0 +1,7 @@
+.popButton{
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+  width: 100px;
+
+}

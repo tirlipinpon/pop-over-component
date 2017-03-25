@@ -1,0 +1,39 @@
+
+div.box {
+  padding: 5px;
+  width:200px;
+  background-color:#eee;
+  border:1px solid #aaa;
+  position:relative;
+  border-radius:7px;
+}
+
+.box:before {
+  position:absolute;
+  left:-20px;
+  top:50%;
+  content:'';
+  height:0;
+  width:0;
+  border:10px solid transparent;
+  z-index:1;
+}
+
+.box:after{
+  position:absolute;
+  left:-18px;
+  top:50%;
+  content:'';
+  height:0;
+  width:0;
+  border:10px solid transparent;
+  z-index:2;
+}
+
+.box:before {
+  border-right-color:#aaa;
+}
+
+.box:after {
+  border-right-color: #eee;
+}

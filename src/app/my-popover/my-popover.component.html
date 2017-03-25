@@ -1,0 +1,14 @@
+<pop-over #popOver4
+          [my]="'center right'"
+          [at]="'right'"
+          [anchor-to]="popOver4Target"
+          [x-offset]="-220"
+          [y-offset]="-80">
+  <app-my-message [title]="'Before you go'" [links]="links" [content]="'Did you lock all the doors?'"></app-my-message>
+</pop-over>
+
+<div class="popButton" [style.margin]="position+'%'">
+  <div  (click)="popOver4.toggle($event)" #popOver4Target>
+    click to see the pop over on the element on the right
+  </div>
+</div>
